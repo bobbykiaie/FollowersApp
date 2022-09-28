@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B28D2F728E3D7C200A2EB8A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D2F628E3D7C200A2EB8A /* NetworkManager.swift */; };
+		3B28D2FB28E3E2B900A2EB8A /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D2FA28E3E2B900A2EB8A /* ErrorMessage.swift */; };
 		3B5E824027F52BA4001AEB72 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E823F27F52BA3001AEB72 /* SearchVC.swift */; };
 		3B5E824227F52BCA001AEB72 /* FavoriteListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E824127F52BCA001AEB72 /* FavoriteListVC.swift */; };
 		3B5E824427F533BD001AEB72 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E824327F533BD001AEB72 /* GFButton.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B28D2F628E3D7C200A2EB8A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3B28D2FA28E3E2B900A2EB8A /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		3B5E823F27F52BA3001AEB72 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		3B5E824127F52BCA001AEB72 /* FavoriteListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListVC.swift; sourceTree = "<group>"; };
 		3B5E824327F533BD001AEB72 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
@@ -55,6 +59,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B28D2F828E3DF1E00A2EB8A /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				3B5E824527F53819001AEB72 /* GFTextField.swift */,
+				3B5E824927FBD038001AEB72 /* GFTitleLabel.swift */,
+				3B5E824B27FBD26B001AEB72 /* GFBodyLabel.swift */,
+				3B5E824327F533BD001AEB72 /* GFButton.swift */,
+				3B5E824D27FBD371001AEB72 /* GFAlertVC.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		3B28D2F928E3E2AA00A2EB8A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3B28D2FA28E3E2B900A2EB8A /* ErrorMessage.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		3B5E825527FD29B3001AEB72 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,18 +128,24 @@
 		3B6B1D8927ED58950041DAAA /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
-				3B5E824327F533BD001AEB72 /* GFButton.swift */,
+				3B28D2F928E3E2AA00A2EB8A /* Utilities */,
+				3B28D2F828E3DF1E00A2EB8A /* CustomViews */,
+				3BB60CB928E3D76200197BF7 /* Managers */,
 				3B5E825627FD29E9001AEB72 /* Support */,
 				3B5E825527FD29B3001AEB72 /* Model */,
 				3B6B1D9827ED58960041DAAA /* Info.plist */,
 				3B5E825727FD2A61001AEB72 /* Screens */,
-				3B5E824527F53819001AEB72 /* GFTextField.swift */,
-				3B5E824927FBD038001AEB72 /* GFTitleLabel.swift */,
-				3B5E824B27FBD26B001AEB72 /* GFBodyLabel.swift */,
-				3B5E824D27FBD371001AEB72 /* GFAlertVC.swift */,
 				3B5E824F27FBDCF9001AEB72 /* UIViewController+ext.swift */,
 			);
 			path = GHFollowers;
+			sourceTree = "<group>";
+		};
+		3BB60CB928E3D76200197BF7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3B28D2F628E3D7C200A2EB8A /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +225,11 @@
 				3B5E825227FD2743001AEB72 /* Followers.swift in Sources */,
 				3B5E824427F533BD001AEB72 /* GFButton.swift in Sources */,
 				3B5E824027F52BA4001AEB72 /* SearchVC.swift in Sources */,
+				3B28D2FB28E3E2B900A2EB8A /* ErrorMessage.swift in Sources */,
 				3B5E824E27FBD371001AEB72 /* GFAlertVC.swift in Sources */,
 				3B5E824C27FBD26B001AEB72 /* GFBodyLabel.swift in Sources */,
 				3B5E824A27FBD038001AEB72 /* GFTitleLabel.swift in Sources */,
+				3B28D2F728E3D7C200A2EB8A /* NetworkManager.swift in Sources */,
 				3B6B1D8B27ED58950041DAAA /* AppDelegate.swift in Sources */,
 				3B6B1D8D27ED58950041DAAA /* SceneDelegate.swift in Sources */,
 				3B5E824827F54622001AEB72 /* FollowerListVCViewController.swift in Sources */,
